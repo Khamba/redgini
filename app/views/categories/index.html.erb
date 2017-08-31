@@ -1,0 +1,27 @@
+<h1>List of all Categories</h1>
+
+<% if @categories.count > 0 %>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= category.name %></td>
+          <td><%= link_to "Edit", edit_category_path(category) %></td>
+          <td><%= button_to "Delete", category_path(category), method: :delete %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p>No Categories yet. You can create one, though.</p>
+<% end %>
+
+<br>
+
+<%= link_to "New Category", new_category_path %>

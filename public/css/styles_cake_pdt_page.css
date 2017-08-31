@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Allan|Arvo|Bree+Serif|Lemonada|Montserrat|Pacifico|Quicksand|Roboto|Raleway');
+
+html,body{
+	height: 100%;
+}
+body{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	color: #6c6f73;
+}
+
+body#cake_product_page .navbar-brand{
+  font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	font-weight: bold;
+}
+/*===========navbar styling ends==============*/
+
+body#cake_product_page #search_btn{
+	color: grey;
+	padding: 3px;
+}
+body#cake_product_page #search_btn:hover{
+  cursor: pointer;
+	color: black;
+}
+
+body#cake_product_page .nav-item{
+  font-family: 'Arvo', serif;
+	font-weight: bold;
+}
+body#cake_product_page .nav-item:hover{
+  font-family: 'Arvo', serif;
+	font-weight: bold;
+	text-decoration: underline;
+}
+body#cake_product_page .navbar_lines{
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+	padding: 20px 5px 0 5px;
+}
+body#cake_product_page #signIn_navbar{
+    color: #fff;
+    background-color: #CC0000;
+    border-color: #CC0000;
+		font-weight: bold;
+		margin: 5px;
+		padding: 5px 5px 7px 5px;
+}
+
+body#cake_product_page #signIn_navbar:hover{
+	cursor: pointer;
+	background-color: white;
+	border-color:  #CC0000;
+	color: #CC0000;
+	font-weight: bold;
+}
+body#cake_product_page #cart_navbar {
+    color: #CC0000;
+    background-color: white;
+    border-color: #CC0000;
+		font-weight: bold;
+		margin: 5px;
+		padding: 5px 5px 7px 5px;
+}
+body#cake_product_page #cart_navbar:hover{
+	cursor: pointer;
+	background-color: #CC0000;
+	border-color: #CC0000;
+	color: white;
+	font-weight: bold;
+}
+body#cake_product_page #shop_cart_home_icon{
+	color: #3d3a3a;
+}
+body#cake_product_page #shop_cart_home_icon:hover{
+	color: black;
+}
+body#cake_product_page .text-line {
+    background-color: transparent;
+    color: black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    padding: 3px 10px;
+		width: 500px;
+}
+body#cake_product_page #search_pdt{
+	 width: 220px;
+}
+
+body#cake_product_page .pdt_page_city_shop{
+	border: solid 1px grey;
+}
+/*========shopping cart icon starts==========*/
+body#cake_product_page #shop_cart_home{
+	margin-right: 20px;
+	margin-top: 10px;
+}
+body#cake_product_page #shop_cart_home_icon{
+	color: #3d3a3a;
+}
+body#cake_product_page #shop_cart_home_icon:hover{
+	color: black;
+}
+/*=========shopping cart icon ends*/
+/*===========navbar styling ends==============*/
+/*============coverapage for the cake product page starts=====*/
+body#cake_product_page #cake_pdt_coverpage{
+	/*background: url("img/cake5.jpg") center center no-repeat;
+	*/background-size: cover;
+	height: 60%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+body#cake_product_page #cake_pdt_coverpage_caption{
+	font-size: 1.4rem;
+	font-weight: 200;
+	max-width: 60rem;
+	margin: 0 auto;
+	text-align: center;
+}
+body#cake_product_page #cake_pdt_coverpage_caption h3{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 70px;
+}
+
+body#cake_product_page #cake_pdt_coverpage_caption input{
+	background-color: white;
+	border-radius: 3px;
+	border: solid 1px grey;
+}
+body#cake_product_page input[placeholder], [placeholder], *[placeholder] {
+    font-size: 13px;
+		text-align: center;
+}
+
+body#cake_product_page #search_city_n_shop{
+		margin-bottom: 10px;
+}
+
+body#cake_product_page hr{
+	background-color: grey;
+}
+/*============coverapage for the cake product page ends=====*/
+/*===========offers carousal starts==================*/
+body#cake_product_page #offer_carousal{
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+body#cake_product_page #offer_carousal img{
+	height: 300px;
+	width: 100%
+}
+
+body#cake_product_page .my_select{
+	color: grey;
+	font-family: 'Arvo', sans-serif;
+	padding: 10px;
+	margin: 3px;
+}
+
+body#cake_product_page #my_select_shop{
+	width: 250px;
+}
+/*===========offers carousal ends==================*/
+
+/*===============filters styling starts======================*/
+body#cake_product_page .cake_weight{
+
+}
+body#cake_product_page .weight_list{
+	text-align: center;
+}
+body#cake_product_page #weight_of_cake label{
+	font-size: 17px;
+}
+
+body#cake_product_page .filter_items{
+	font-size: 14px;
+}
+/*===============filters styling ends======================*/
+/*=========side bar styling starts===========*/
+
+body#cake_product_page #cake_pdt_page_header{
+	font-family: 'Lemonada', cursive;
+	font-weight: bold;
+	text-align: center;
+	margin: 140px 0px 50px 0px;
+	color: #999999;
+}
+
+body#cake_product_page #sidebar_header{
+  background-color: #e5e5e5; /*faint red = #FF4444 and dark red = #CC0000*/
+	color: #7f7f7f;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+body#cake_product_page #sidebar_cake_cat .sidebar_cake_cat_items{
+	font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+/*=========side bar styling ends===========*/
+
+/*=========styling of cake boxes start============*/
+body#cake_product_page .shadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body#cake_product_page .cake_box_row{
+	padding: 5px 0px 5px 0px;
+
+}
+body#cake_product_page .cake_box{
+
+}
+body#cake_product_page .cake_box:hover{
+	cursor: pointer;
+}
+body#cake_product_page .cake_box img{
+	height: 150px;
+	margin-top: 10px;
+	border-radius: 7px;
+	vertical-align: middle;
+}
+body#cake_product_page .addToCart_btn{
+	border-radius: 15px;
+	font-size: 11px;
+	margin-top: -3px;
+	margin-left: 17px;
+	background-color: #CC0000;
+}
+body#cake_product_page .addToCart_btn:hover{
+	cursor:pointer;
+	color: #CC0000;
+	border-color: #CC0000;
+	background-color: white;
+}
+body#cake_product_page .inc_dec_btn{
+	color: #CC0000;
+	border-color: #CC0000;
+	background-color: white;
+	border-radius: 15px;
+}
+body#cake_product_page .add-to-cart-qty{
+	color: black;
+	font-size: 15px;
+	background-color: white;
+}
+body#cake_product_page input.qtyplus {
+	  width:20px;
+		height:20px;
+}
+body#cake_product_page input.qtyminus {
+	 width:20px;
+	 height:20px;
+}
+body#cake_product_page .cake_name{
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+body#cake_product_page .cake_price{
+	font-size: 14px;
+	font-family: 'Quicksand', sans-serif;
+}
+body#cake_product_page .cake_weight{
+	font-size: 14px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body#cake_product_page .heart_like{
+	color: pink;
+	margin-top: 10px;
+}
+/*=========styling of cake boxes end============*/
+/*=====Footer start=====*/
+body#cake_product_page #footer_line{
+  background: #ff0000;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  /*font-family: 'Raleway', sans-serif;*/
+}
+body#cake_product_page #footer_line a{
+  color: white;
+}
+
+body#cake_product_page #footer{
+	background: white;
+}
+body#cake_product_page #footer_oheo{
+	font-family: 'Pacifico', cursive;
+	color: #ADB0B6;
+	margin-top:5px;
+	margin-bottom: 0px;
+}
+body#cake_product_page #footer_lines{
+	color: #ADB0B6;
+	/*margin-left: 50px;*/
+	font-size: 12px;
+	margin-top: 20px;
+	/*font-family: 'Raleway', sans-serif;*/
+}
+body#cake_product_page footer{
+	background-color: #282C35;
+	padding-top: 10px;
+}
+body#cake_product_page #categories_footer a{
+	color: #ADB0B6;
+	list-style: none;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-size: 13px;
+
+}
+body#cake_product_page #links_footer a{
+	color: #ADB0B6;
+	list-style: none;
+	/*font-family: 'Raleway', sans-serif;*/
+	font-size: 13px;
+
+}
+body#cake_product_page #footer_cat_head{
+	color: #ADB0B6;
+	font-size: 18px;
+	font-weight: 700;
+	/*font-family: 'Raleway', sans-serif;*/
+
+}
+body#cake_product_page #footer_links_head{
+	color: #ADB0B6;
+	font-size: 18px;
+	font-weight: 700;
+	/*font-family: 'Raleway', sans-serif;*/
+}
+body#cake_product_page #footer_madeby,#footer_madeby a{
+	color: #ADB0B6;
+	margin-top: 50px;
+}
+
+body#cake_product_page #footer_mail_head{
+	color: #ADB0B6;
+	font-size: 18px;
+	font-weight: 700;
+}
+body#cake_product_page #footer_mail_link{
+	color: #ADB0B6;
+	margin-bottom: 20px;
+
+}
+body#cake_product_page #footer_phone_head{
+	color: #ADB0B6;
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+body#cake_product_page #footer_phone_link{
+	color: #ADB0B6;
+	margin-bottom: 10px;
+}
+body#cake_product_page #footer_followus_head{
+	margin-bottom: 10px;
+	margin-top: 20px;
+	color: #ADB0B6;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline;
+
+}
+body#cake_product_page #footer_social_fb{
+	margin-right: 5px;
+	color: #ADB0B6;
+
+}
+body#cake_product_page #footer_social_g+{
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #ADB0B6;
+
+}
+body#cake_product_page #footer_social_tweeter{
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #ADB0B6;
+
+}
+body#cake_product_page #footer_social_insta{
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #ADB0B6;
+
+}
+/*=====Footer end=====*/
+
+/*========social section start========*/
+
+body#cake_product_page .social_network_btns{
+	margin: 40px auto 0 auto;
+}
+body#cake_product_page ul.social-network {
+	list-style: none;
+	display: inline-block;
+	margin: 0 auto 0 auto;
+}
+body#cake_product_page ul.social-network li {
+	display: inline;
+	margin: 0 5px 0 5px;
+}
+
+/* footer social icons */
+body#cake_product_page .social-network a.icoFacebook {
+	background-color:#3B5998;
+}
+body#cake_product_page .social-network a.icoTwitter {
+	background-color:#33ccff;
+}
+body#cake_product_page .social-network a.icoGoogle {
+	background-color:#BD3518;
+}
+body#cake_product_page .social-network a.icoInstagram {
+	background-color:#e4405f;
+}
+body#cake_product_page .social-network a.icoPinterest {
+	background-color:#c92228;
+}
+body#cake_product_page .social-network a.icoYoutube {
+	background-color:#c4302b;
+}
+body#cake_product_page .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+body#cake_product_page a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+body#cake_product_page .social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+body#cake_product_page .social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+body#cake_product_page .social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+body#cake_product_page .social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+body#cake_product_page #footer_oheoLink{
+	margin: 10px auto 0 auto;
+}
+body#cake_product_page #footer_oheoLink a{
+	color: #ADB0B6;
+}
+body#cake_product_page #footer_oheoLink a:hover{
+	color: white;
+}
+
+/*========social section ends========*/
