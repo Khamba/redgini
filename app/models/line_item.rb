@@ -15,4 +15,11 @@
 class LineItem < ActiveRecord::Base
   belongs_to :product
   belongs_to :shopping_cart
+  
+  before_save :set_total
+  
+  def set_total
+    self.total = unit_price * quantity
+  end
+  
 end

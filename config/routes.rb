@@ -22,4 +22,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   resources :products, except: :show, param: :product_id
   resources :categories, except: :show, param: :category_id
+  
+  post :add_to_cart, to: 'cart#add'
+  
 end
