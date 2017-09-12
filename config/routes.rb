@@ -24,7 +24,9 @@ Rails.application.routes.draw do
   resources :products, except: :show, param: :product_id
   resources :categories, except: :show, param: :category_id
 
+  get 'cart', to: 'cart#show'
   post :add_to_cart, to: 'cart#add'
+  delete :remove_from_cart, to: 'cart#remove'
 
   get 'auth/:provider/callback', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'

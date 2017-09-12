@@ -24,6 +24,14 @@ class ShoppingCart < ActiveRecord::Base
         update_total
     end
     
+    def remove(product_id)
+       self.line_items.where(product_id: product_id).destroy_all 
+    end
+    
+    def clear_cart
+       self.line_items.destroy_all 
+    end
+    
     private
     
         def update_total
