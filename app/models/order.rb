@@ -12,4 +12,7 @@
 #
 
 class Order < ActiveRecord::Base
+    has_one :shopping_cart
+    belongs_to :user
+    has_one :address, through: :user
 end

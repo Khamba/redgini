@@ -12,6 +12,7 @@
 class ShoppingCart < ActiveRecord::Base
     
     has_many :line_items
+    belongs_to :order
     
     def add(product_id, quantity)
         product = Product.find(product_id)
