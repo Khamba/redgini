@@ -16,13 +16,17 @@
 #      category PATCH  /categories/:category_id(.:format)      categories#update
 #               PUT    /categories/:category_id(.:format)      categories#update
 #               DELETE /categories/:category_id(.:format)      categories#destroy
-# 
+#   add_to_cart POST   /add_to_cart(.:format)                  cart#add
+#
 
 Rails.application.routes.draw do
   root 'static_pages#home'
   resources :products, except: :show, param: :product_id
   resources :categories, except: :show, param: :category_id
-  
+
   post :add_to_cart, to: 'cart#add'
-  
+
+  get 'auth/:provider/callback', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
+
 end
