@@ -17,24 +17,14 @@ class Order < ActiveRecord::Base
     belongs_to :user
     has_one :address, through: :user
     
-    after_create :send_emails_and_texts
+    def send_emails_and_texts
+        OrderMailer.send_email_to_customer(self).deliver
+        OrderMailer.send_email_to_admin(self).deliver
+       send_text_to_customer
+       send_text_to_admin
+    end
     
     private
-    
-        def send_emails_and_sms
-           send_email_to_customer
-           send_email_to_admin
-           send_text_to_customer
-           send_text_to_admin
-        end
-        
-        def send_email_to_customer
-           #TODO 
-        end
-        
-        def send_email_to_admin
-            #TODO
-        end
         
         def send_text_to_admin
             #TODO

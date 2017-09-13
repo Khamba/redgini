@@ -10,6 +10,7 @@ class OrdersController < ApplicationController
     def create
         @order = Order.new(params[:order])
         if @order.save
+            send_emails_and_texts
             redirect_to thank_you_url
         else
             render :new
