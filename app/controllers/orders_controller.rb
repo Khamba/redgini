@@ -20,4 +20,11 @@ class OrdersController < ApplicationController
     def show
         
     end
+    
+    private
+    
+        def order_params
+            # TODO
+            params.require(:order).permit() 
+        end
 end
