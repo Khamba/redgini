@@ -209,7 +209,17 @@ body#cake_product_page #sidebar_header{
 body#cake_product_page #sidebar_cake_cat .sidebar_cake_cat_items{
 	font-size: 13px;
   font-family: 'Montserrat', sans-serif;
-
+}
+body#cake_product_page #applyFiltersBtn{
+	background-color: #CC0000;
+	color: white;
+	margin-top: 5px;
+	width: 100%;
+}
+body#cake_product_page #applyFiltersBtn:hover{
+	color: #CC0000;
+	border-color: #CC0000;
+	background-color: white;
 }
 /*=========side bar styling ends===========*/
 
@@ -491,5 +501,14 @@ body#cake_product_page #footer_oheoLink a{
 body#cake_product_page #footer_oheoLink a:hover{
 	color: white;
 }
-
+body#cake_product_page #facebook_btn{
+	background-color:  #3b5998;
+	color: white;
+	font-weight: bold;
+}
+body#cake_product_page #facebook_btn:hover{
+	background-color:  white;
+	color: #3b5998;
+	border-color: #3b5998;
+}
 /*========social section ends========*/

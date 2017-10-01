@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
-  
+
   layout false, except: :create
-  
+
   def new
   end
 
@@ -11,7 +11,11 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
     # rescue
     # end
-    redirect_to root_url
+    if @user.mobile_number.blank?
+      redirect_to mobile_number_url
+    else
+      redirect_to products_url
+    end
   end
 
   def destroy

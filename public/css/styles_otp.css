@@ -17,7 +17,7 @@ body{
 }
 
 /* Horizontal line styles */
-body#login_details hr.style1:before {
+body#otp_page hr.style1:before {
   display: block;
   content: "";
   height: 30px;
@@ -27,35 +27,35 @@ body#login_details hr.style1:before {
   border-width: 0 0 1px 0;
   border-radius: 20px;
 }
-body#login_details hr.style2 {
+body#otp_page hr.style2 {
 	height: 6px;
 	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
     border: 0;
 }
 
 /*navbar styling start*/
-body#login_details #signIn_navbar {
+body#otp_page #signIn_navbar {
     color: #fff;
     background-color: #cc0000;
     border-color: #cc0000;
 		font-weight: bold;
 		margin: 5px;
 }
-body#login_details #Login_navbar {
+body#otp_page #Login_navbar {
     color: #fff;
     background-color: #cc0000;
     border-color: #cc0000;
 		font-weight: bold;
 		margin: 5px;
 }
-body#login_details #signIn_navbar:hover{
+body#otp_page #signIn_navbar:hover{
 	cursor: pointer;
 	background-color: white;
 	border-color:  #cc0000;
 	color: #cc0000;
 	font-weight: bold;
 }
-body#login_details #Login_navbar:hover{
+body#otp_page #Login_navbar:hover{
 	cursor: pointer;
 	background-color: white;
 	border-color:  #cc0000;
@@ -64,7 +64,7 @@ body#login_details #Login_navbar:hover{
 }
 /*==========Dropdown-content==============*/
 
-body#login_details .dropdown-content {
+body#otp_page .dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
@@ -73,35 +73,35 @@ body#login_details .dropdown-content {
     z-index: 1;
 }
 
-body#login_details .dropdown-content a {
+body#otp_page .dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
 		font-family: 'Roboto', sans-serif;
 }
 
-body#login_details .dropdown-content a:hover {
+body#otp_page .dropdown-content a:hover {
 	background-color: #ff3232;
 	font-family: 'Roboto', sans-serif;
 }
 
-body#login_details .dropdown:hover .dropdown-content {
+body#otp_page .dropdown:hover .dropdown-content {
     display: block;
 }
 
 /*=========================================*/
 
 
-body#login_details #brand_name{
+body#otp_page #brand_name{
 	font-family: 'Pacifico', cursive;
 	font-size: 30px;
 	font-weight: bold;
 }
-body#login_details #navbar_items{
+body#otp_page #navbar_items{
 	font-family: 'Arvo', serif;
 	font-weight: bold;
 }
-body#login_details #footer_line{
+body#otp_page #footer_line{
   background: #ff0000;
   color: white;
   text-align: center;
@@ -109,13 +109,13 @@ body#login_details #footer_line{
   font-size: 20px;
   font-family: 'Droid Sans', sans-serif;
 }
-body#login_details #footer_line a{
+body#otp_page #footer_line a{
   color: white;
 }
-body#login_details #navbar_main .nav-item:hover {
+body#otp_page #navbar_main .nav-item:hover {
   text-decoration: underline; }
 
-body#login_details	#products_dropdown .dropdown-item:hover {
+body#otp_page	#products_dropdown .dropdown-item:hover {
 	  background-color: #cc0000;
 	  color: white; }
 /*navbar styling ends*/
@@ -123,34 +123,34 @@ body#login_details	#products_dropdown .dropdown-item:hover {
 /* Horizontal line styles end */
 
 /*===========Manual login form starts===========*/
-body#login_details .finish_login_btn{
+body#otp_page .finish_login_btn{
 	color: #fff;
 	background-color: #cc0000;
 	border-color: #cc0000;
 	font-weight: bold;
 	margin: 5px 5px 5px 15px;
 }
-body#login_details .finish_login_btn:hover{
+body#otp_page .finish_login_btn:hover{
 	cursor: pointer;
 	background-color: white;
 	border-color:  #cc0000;
 	color: #cc0000;
 	font-weight: bold;
 }
-body#login_details #manual_login{
+body#otp_page #enter_mobile_number, #enter_otp{
 	font-family: 'Montserrat', sans-serif;
 }
 /*===========Manual login form ends=================*/
 
 /*=======facebook login button=========*/
-body#login_details #facebook_login_btn{
+body#otp_page #facebook_login_btn{
 	color: white;
 	background-color: #3b5998;
 	font-weight: bold;
 	margin: 30px 0px 20px 10px;
 
 }
-body#login_details #facebook_login_btn:hover{
+body#otp_page #facebook_login_btn:hover{
 	color: #3b5998;
 	background-color: white;
 	cursor: pointer;
@@ -160,13 +160,13 @@ body#login_details #facebook_login_btn:hover{
 }
 /*=======facebook login button end=========*/
 /*=======google/gmail login button=========*/
-body#login_details #google_login_btn{
+body#otp_page #google_login_btn{
 	color: white;
 	background-color: #dd4b39;
 	font-weight: bold;
 	margin: 25px 0px 20px 10px;
 }
-body#login_details #google_login_btn:hover{
+body#otp_page #google_login_btn:hover{
 	color: #dd4b39;
 	background-color: white;
 	cursor: pointer;
@@ -175,7 +175,7 @@ body#login_details #google_login_btn:hover{
 }
 /*=======google/gmail login button end=========*/
 /*=====Footer start=====*/
-body#login_details #footer_line{
+body#otp_page #footer_line{
   background: #ff0000;
   color: white;
   text-align: center;
@@ -183,83 +183,83 @@ body#login_details #footer_line{
   font-size: 20px;
   /*font-family: 'Raleway', sans-serif;*/
 }
-body#login_details #footer_line a{
+body#otp_page #footer_line a{
   color: white;
 }
 
-body#login_details #footer{
+body#otp_page #footer{
 	background: white;
 }
-body#login_details #footer_oheo{
+body#otp_page #footer_oheo{
 	font-family: 'Pacifico', cursive;
 	color: #ADB0B6;
 	margin-top:5px;
 	margin-bottom: 0px;
 }
-body#login_details #footer_lines{
+body#otp_page #footer_lines{
 	color: #ADB0B6;
 	/*margin-left: 50px;*/
 	font-size: 12px;
 	margin-top: 20px;
 	/*font-family: 'Raleway', sans-serif;*/
 }
-body#login_details footer{
+body#otp_page footer{
 	background-color: #282C35;
 	padding-top: 10px;
 }
-body#login_details #categories_footer a{
+body#otp_page #categories_footer a{
 	color: #ADB0B6;
 	list-style: none;
 	/*font-family: 'Raleway', sans-serif;*/
 	font-size: 13px;
 
 }
-body#login_details #links_footer a{
+body#otp_page #links_footer a{
 	color: #ADB0B6;
 	list-style: none;
 	/*font-family: 'Raleway', sans-serif;*/
 	font-size: 13px;
 
 }
-body#login_details #footer_cat_head{
+body#otp_page #footer_cat_head{
 	color: #ADB0B6;
 	font-size: 18px;
 	font-weight: 700;
 	/*font-family: 'Raleway', sans-serif;*/
 
 }
-body#login_details #footer_links_head{
+body#otp_page #footer_links_head{
 	color: #ADB0B6;
 	font-size: 18px;
 	font-weight: 700;
 	/*font-family: 'Raleway', sans-serif;*/
 }
-body#login_details #footer_madeby,#footer_madeby a{
+body#otp_page #footer_madeby,#footer_madeby a{
 	color: #ADB0B6;
 	margin-top: 50px;
 }
 
-body#login_details #footer_mail_head{
+body#otp_page #footer_mail_head{
 	color: #ADB0B6;
 	font-size: 18px;
 	font-weight: 700;
 }
-body#login_details #footer_mail_link{
+body#otp_page #footer_mail_link{
 	color: #ADB0B6;
 	margin-bottom: 20px;
 
 }
-body#login_details #footer_phone_head{
+body#otp_page #footer_phone_head{
 	color: #ADB0B6;
 	font-size: 20px;
 	margin-bottom: 10px;
 	margin-top: 20px;
 }
-body#login_details #footer_phone_link{
+body#otp_page #footer_phone_link{
 	color: #ADB0B6;
 	margin-bottom: 10px;
 }
-body#login_details #footer_followus_head{
+body#otp_page #footer_followus_head{
 	margin-bottom: 10px;
 	margin-top: 20px;
 	color: #ADB0B6;
@@ -268,24 +268,24 @@ body#login_details #footer_followus_head{
 	text-decoration: underline;
 
 }
-body#login_details #footer_social_fb{
+body#otp_page #footer_social_fb{
 	margin-right: 5px;
 	color: #ADB0B6;
 
 }
-body#login_details #footer_social_g+{
+body#otp_page #footer_social_g+{
 	margin-left: 5px;
 	margin-right: 5px;
 	color: #ADB0B6;
 
 }
-body#login_details #footer_social_tweeter{
+body#otp_page #footer_social_tweeter{
 	margin-left: 5px;
 	margin-right: 5px;
 	color: #ADB0B6;
 
 }
-body#login_details #footer_social_insta{
+body#otp_page #footer_social_insta{
 	margin-left: 5px;
 	margin-right: 5px;
 	color: #ADB0B6;
@@ -295,46 +295,46 @@ body#login_details #footer_social_insta{
 
 /*========social section start========*/
 
-body#login_details .social_network_btns{
+body#otp_page .social_network_btns{
 	margin: 40px auto 0 auto;
 }
-body#login_details ul.social-network {
+body#otp_page ul.social-network {
 	list-style: none;
 	display: inline;
 }
-body#login_details ul.social-network li {
+body#otp_page ul.social-network li {
 	display: inline;
 	margin: 0 5px 0 5px;
 }
 
 /* footer social icons */
-body#login_details .social-network a.icoFacebook {
+body#otp_page .social-network a.icoFacebook {
 	background-color:#3B5998;
 }
-body#login_details .social-network a.icoTwitter {
+body#otp_page .social-network a.icoTwitter {
 	background-color:#33ccff;
 }
-body#login_details .social-network a.icoGoogle {
+body#otp_page .social-network a.icoGoogle {
 	background-color:#BD3518;
 }
-body#login_details .social-network a.icoInstagram {
+body#otp_page .social-network a.icoInstagram {
 	background-color:#e4405f;
 }
-body#login_details .social-network a.icoPinterest {
+body#otp_page .social-network a.icoPinterest {
 	background-color:#c92228;
 }
-body#login_details .social-network a.icoYoutube {
+body#otp_page .social-network a.icoYoutube {
 	background-color:#c4302b;
 }
-body#login_details .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+body#otp_page .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
-body#login_details a.socialIcon:hover, .socialHoverClass {
+body#otp_page a.socialIcon:hover, .socialHoverClass {
 	color:#44BCDD;
 }
 
-body#login_details .social-circle li a {
+body#otp_page .social-circle li a {
 	display:inline-block;
 	position:relative;
 	margin:0 auto 0 auto;
@@ -346,13 +346,13 @@ body#login_details .social-circle li a {
 	height: 50px;
 	font-size:20px;
 }
-body#login_details .social-circle li i {
+body#otp_page .social-circle li i {
 	margin:0;
 	line-height:50px;
 	text-align: center;
 }
 
-body#login_details .social-circle li a:hover i, .triggeredHover {
+body#otp_page .social-circle li a:hover i, .triggeredHover {
 	-moz-transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	-ms--transform: rotate(360deg);
@@ -363,7 +363,7 @@ body#login_details .social-circle li a:hover i, .triggeredHover {
 	-ms-transition: all 0.2s;
 	transition: all 0.2s;
 }
-body#login_details .social-circle i {
+body#otp_page .social-circle i {
 	color: #fff;
 	-webkit-transition: all 0.8s;
 	-moz-transition: all 0.8s;
@@ -372,21 +372,21 @@ body#login_details .social-circle i {
 	transition: all 0.8s;
 }
 
-body#login_details #footer_oheoLink{
+body#otp_page #footer_oheoLink{
 	margin: 10px auto 0 auto;
 }
-body#login_details #footer_oheoLink a{
+body#otp_page #footer_oheoLink a{
 	color: #ADB0B6;
 }
-body#login_details #footer_oheoLink a:hover{
+body#otp_page #footer_oheoLink a:hover{
 	color: white;
 }
-body#login_details #facebook_btn{
+body#homepage #facebook_btn{
 	background-color:  #3b5998;
 	color: white;
 	font-weight: bold;
 }
-body#login_details #facebook_btn:hover{
+body#homepage #facebook_btn:hover{
 	background-color:  white;
 	color: #3b5998;
 	border-color: #3b5998;

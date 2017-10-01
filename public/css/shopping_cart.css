@@ -59,8 +59,22 @@ body#cartpage #cart_back:hover{
 body#cartpage #cart_btn{
   padding-bottom: 50px;
 }
-body#cartpage .cart_qty{
-  width: 60px;
+body#cartpage .actual_cost{
+  vertical-align: middle;
+}
+body#cartpage.sr_no{
+  vertical-align: middle;
+}
+body#cartpage .cart_img{
+  vertical-align: middle;
+}
+body#cartpage .cake_qty{
+  vertical-align: middle;
+}
+body#cartpage .cart_qty_col{
+  width: 130px;
+  padding: 0px 30px 0px 30px;
+  vertical-align: middle;
 }
 body#cartpage .cart_cake_img{
   height: 80px;

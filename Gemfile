@@ -34,3 +34,4 @@ gem 'simple_form'
 gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-facebook"
+gem "awesome_print"

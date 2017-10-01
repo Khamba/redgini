@@ -1,0 +1,44 @@
+<!-- ===================Navbar start============================ -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" id="homepageNavbar">
+  	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+  	<a class="navbar-brand" href=<%= root_path %> id="brand_name">Redgini</a>
+
+  <div class="collapse navbar-collapse" id="navbar_main">
+    <ul class="navbar-nav mr-auto mt-2 mt-md-0" id="navbar_items">
+      <li class="nav-item">
+        <a class="nav-link" href=<%= root_path %>>Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutus">About us</a>
+      </li>
+			<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink" id="products_dropdown">
+          <a class="dropdown-item" href=<%= products_path %>>Cakes & Pastry</a>
+        </div>
+      </li>
+        <a class="nav-link" href="#">Our team</a>
+      </li>
+		</ul>
+
+  </div>
+
+  <% if right_side_menu %>
+  	<a href=<%= cart_path %> id="shop_cart_home"><i class="fa fa-shopping-cart fa-2x  hidden-sm-down" aria-hidden="true" id="shop_cart_home_icon"></i></a>
+  	<a class="btn btn-danger pull-right btn-sm hidden-sm-up" href="shopping_cart.html" id="cart_navbar"  data-toggle="" data-target="">
+  	Shopping cart</a>
+
+    <% if !logged_in? %>
+  	 <a class="btn btn-danger pull-right btn-sm" href=<%= login_path %> id="signIn_navbar"  data-toggle="" data-target="">
+  	Signup/Login</a>
+    <% else %>
+    <a class="btn btn-danger pull-right btn-sm" href=<%= logout_path %> id="signIn_navbar"  data-toggle="" data-target="">
+  Logout</a>
+    <% end %>
+  <% end %>
+</nav>

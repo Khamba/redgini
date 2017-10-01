@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Allan|Arvo|Droid+Sans|Lobster|Pacifico|Roboto|Satisfy|Montserrat|Source+Sans+Pro');
+body#final {
+  font-family: 'Montserrat', sans-serif;
+}
+body#final #checkout_nav{
+  margin-bottom: 50px;
+}
+body#final #checkout_brand{
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+}
+body#final .navbar_lines{
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+body#final #checkout_navbar li{
+  padding: 18px 10px 0 10px;
+}
+body#final #checkout_navbar ul{
+}
+body#final #frame{
+  background-color: #f7f7f7;
+}
+body#final #thankYou{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px 20px 10px;
+}
+body#final #orderNo{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 0px 10px 10px;
+}
+body#final #msg{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px 10px 50px 10px;
+}
+body#final #delTime{
+    margin: 0px 0px 10px 10px;
+    font-size: 25px;
+}
+body#final #time{
+    font-size: 20px;
+}
+body#final #date{
+    font-size: 18px;
+}
+body#final #day{
+    font-size: 18px;
+}
+body#final #delAddress{
+    margin: 0px 0px 10px 10px;
+    font-size: 25px;
+}
+body#final #address{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px 10px 50px 40px;
+}
+body#final #shopBtn{
+    margin: 5px 0px 20px 40px;
+    background-color: white;
+    border-color: #cc0000;
+    color: #cc0000;
+    font-weight: bold;
+}
+body#final #shopBtn:hover{
+    background-color: #cc0000;
+    color: white;
+}
+body#final #orderHeading{
+    background-color: #CC0000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body#final #summaryOfItems{
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+}
+body#final #listHeader{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0px 5px 0px;
+}
+body#final .listItems{
+    font-size: 15px;
+    padding: 5px 0px 5px 0px;
+    color: #5F5F5F;
+}
+body#final .totalItems{
+    font-weight: bolder;
+    color:black;
+    padding: 3px 0px 3px 0px;
+}
+body#final .shadow_depth_1{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+body#final .shadow_depth_2{
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+body#final .shadow_depth_3{
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+body#final .shadow_depth_4{
+   -webkit-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  }

@@ -399,5 +399,14 @@ body#policies_page #footer_redginiLink a{
 body#policies_page #footer_redginiLink a:hover{
 	color: white;
 }
-
+body#policies_page #facebook_btn{
+	background-color:  #3b5998;
+	color: white;
+	font-weight: bold;
+}
+body#policies_page #facebook_btn:hover{
+	background-color:  white;
+	color: #3b5998;
+	border-color: #3b5998;
+}
 /*========social section ends========*/

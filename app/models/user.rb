@@ -10,6 +10,7 @@
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #  uid           :string
+#  otp           :string
 #
 
 class User < ActiveRecord::Base

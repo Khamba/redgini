@@ -1,174 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Oheo | login details</title>
-    <!--Bootstrap CSS-->
-    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap3.min.css">-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <%= render 'layouts/partials/head', specific_css_file_link: capture { %>
     <link rel="stylesheet" type="text/css" href="css/styles_loginDetails.css">
-    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============^SASS link^================-->
+  <% } %>
+  <% # do end syntax doesn't work in the above %>
 
-
-     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-  </head>
   <body id="login_details">
 
-    <!--===================Navbar start============================-->
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="index.html" id="brand_name">Redgini</a>
+    <%= render 'layouts/partials/navbar', right_side_menu: false %>
 
-    <div class="collapse navbar-collapse" id="navbar_main">
-      <ul class="navbar-nav mr-auto mt-2 mt-md-0" id="navbar_items">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutus">About us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Products
-          </a>
-          <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink" id="products_dropdown">
-            <a class="dropdown-item" href="cake_product.html">Cakes & Pastry</a>
-          </div>
-        </li>
-        <!--<li class="nav-item">
-          <a class="nav-link" href="#">Our team</a>
-        </li>-->
-        <li class="nav-item">
-          <a class="nav-link" href="#contactus">Contact us</a>
-        </li>
+    <!--====facebook, gmail and manual login page start=====-->
 
-      </ul>
-
-    </div>
-
-  </nav>
-    <!--===================Navbar end============================-->
-
-  <!--====facebook, gmail and manual login page start=====-->
-
-  <div class="container" style="margin-bottom:50px;">
-    <div class="page-header">
-      <h3 style="text-align:center; font-weight:bold; margin-top:100px">Just one step...fellas!</h2>
-      <p style="text-align:center">We need to know your name and email if we want to contact you!</p>
-    </div>
-    <hr class="style2" style="margin-bottom:50px">
-    <div class="row" style="background-color:#eaebed">
-      <div class="col-sm-4"></div>
-
-      <div class="col-sm-4 col-sm-border">
-        <h4 style="font-weight:bold; margin-top:30px">Connect with social network</h4>
-        <hr>
-        <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-3">
-          <a href="auth/facebook" id="facebook_login_btn" type="button" class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</a>
-            <h6 style="font-weight:bold; margin-top:10px; margin-left: 65px">OR</h6>
-          <a href="auth/google_oauth2" id="google_login_btn" type="button" class="btn btn-gplus"><i class="fa fa-google-plus left"></i> Google +</a>
-        </div>
-        <div class="col-sm-6"></div>
-        </div>
+    <div class="container" style="margin-bottom:50px;">
+      <div class="page-header">
+        <h3 style="text-align:center; font-weight:bold; margin-top:100px">Just one step...fellas!</h2>
+        <p style="text-align:center">We need to know your name and email if we want to contact you!</p>
       </div>
+      <hr class="style2" style="margin-bottom:50px">
+      <div class="row" style="background-color:#eaebed">
+        <div class="col-sm-4"></div>
 
-      <div class="col-sm-4"></div>
-    </div>
-  </div>
-
-  <!--====facebook, gmail and manual login page end=====-->
-
-
-
-  <!--===================Footer start============================-->
-    <footer class="container-fluid">
-      <div class="container-fluid" id="footer_container">
-
-      <div class="row">
-        <div class="col-sm-3">
-          <h1 class="display-4" id="footer_oheo">Redgini</h1>
-	        <p id="footer_lines">The great cakes and pastries are about making your taste buds do that happy dance. A spin, a twirl and a pirouette. At Redgini, we believe a great taste and quality is one that's been made with oodles of love by our products. It's all about recreating flavours and creating recipes that are drool-worthy and memorable</p>
-        </div>
-
-        <div class="col-sm-5">
+        <div class="col-sm-4 col-sm-border">
+          <h4 style="font-weight:bold; margin-top:30px">Connect with social network</h4>
+          <hr>
           <div class="row">
-          <div class="col-sm-6">
-          <h6 id="footer_cat_head">Categories</h6>
-          <hr style="background-color:white">
-          <ul  class="list-unstyled" id="categories_footer">
-            <li><a href="#">Chocolate</a></li>
-            <li><a href="#">Vanilla</a></li>
-            <li><a href="#">Pineapple</a></li>
-            <li><a href="#">Strawberry</a></li>
-            <li><a href="#">Mixed fruit</a></li>
-            <li><a href="#">New releases</a></li>
-          </ul>
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3">
+            <a href="auth/facebook" id="facebook_login_btn" type="button" class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</a>
+              <h6 style="font-weight:bold; margin-top:10px; margin-left: 65px">OR</h6>
+            <a href="auth/google_oauth2" id="google_login_btn" type="button" class="btn btn-gplus"><i class="fa fa-google-plus left"></i> Google +</a>
           </div>
-          <div class="col-sm-6">
-          <h6 id="footer_links_head">Useful links</h6>
-          <hr style="background-color:white">
-          <ul class="list-unstyled" class="unstyled" id="links_footer">
-            <li><a href="#aboutus">About us</a></li>
-            <li><a href="#contactus">Contact us</a></li>
-            <li><a href="policies.html">Privacy policies</a></li>
-            <li><a href="policies.html">Disclaimer</a></li>
-            <li><a href="policies.html">Terms & conditions</a></li>
-            <li><a href="policies.html">Privacy policies</a></li>
-          </ul>
-          </div>
+          <div class="col-sm-6"></div>
           </div>
         </div>
-        <div class="col-sm-4">
-        <h6 id="footer_mail_head">Support & Enquiry</h6>
-        <hr style="background-color:white">
-        <i class="fa fa-1x fa-envelope" aria-hidden="true" style="color:white"></i>
-        <a id="footer_mail_link" href="">support@oheo.in</a>
-        <br><br>
-        <i class="fa fa-1x fa-phone" aria-hidden="true"  style="color:white"></i>
-        <a id="footer_phone_link" href="">+91 9730807012</a>
 
-        </div>
-
+        <div class="col-sm-4"></div>
       </div>
-
     </div>
-    <div class="conteiner row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4 social_network_btns">
-          <ul class="social-network social-circle">
-              <li><a type="button" class="icoFacebook"><i class="fa fa-facebook"> </i></a></li>
-              <li><a type="button" class="icoGoogle"><i class="fa fa-google-plus"> </i></a></li>
-              <li><a type="button" class="icoTwitter"><i class="fa fa-twitter"> </i></a></li>
-              <li><a type="button" class="icoPinterest"><i class="fa fa-pinterest"> </i></a></li>
-              <li><a type="button" class="icoInstagram"><i class="fa fa-instagram"> </i></a></li>
-              <li><a type="button" class="icoYoutube"><i class="fa fa-youtube-play"></i></a></li>
-          </ul>
-        </div>
-      <div class="col-md-4"></div>
-    <!--Copyright-->
-     <div id="footer_oheoLink">
-           <h6>© 2017 Copyright:<a href="https://www.redgini.com"> www.redgini.com</a></h6>
-    </div>
-     <!--/.Copyright-->
-      </div>
-  </footer>
 
-  <!--===================Footer end============================-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!--====facebook, gmail and manual login page end=====-->
+
+
+
+    <%= render 'layouts/partials/footer' %>
+    <%= render 'layouts/partials/javascripts', specific_js_file_link: '' %>
+
   </body>
 </html>
