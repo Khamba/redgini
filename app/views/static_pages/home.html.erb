@@ -51,8 +51,13 @@
 	<a href="shopping_cart.html" id="shop_cart_home"><i class="fa fa-shopping-cart fa-2x  hidden-sm-down" aria-hidden="true" id="shop_cart_home_icon"></i></a>
 	<a class="btn btn-danger pull-right btn-sm hidden-sm-up" href="shopping_cart.html" id="cart_navbar"  data-toggle="" data-target="">
 	Shopping cart</a>
-	<a class="btn btn-danger pull-right btn-sm" href="login_fb_gmail.html" id="signIn_navbar"  data-toggle="" data-target="">
+	<% if logged_in? %>
+		<a class="btn btn-danger pull-right btn-sm" href="logout" id="signIn_navbar"  data-toggle="" data-target="">
+	Logout</a>
+	<% else %>
+		<a class="btn btn-danger pull-right btn-sm" href="login" id="signIn_navbar"  data-toggle="" data-target="">
 	Signup/Login</a>
+	<% end %>
 </nav>
 	<!--====================coverpage offers starts=========================-->
 	<div id="coverOffers" class="carousel slide" data-ride="carousel">

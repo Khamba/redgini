@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Oheo | Cake & pastries</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles_cake_pdt_page.css">
+  </head>
+  <body id="cake_product_page">
+  <!--=======navbar for the product page start=========-->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <strong>Redgini</strong>
+        </a>
+        <div class="collapse navbar-collapse" id="">
+            <ul class="navbar-nav mr-auto">
+              <!--<li class="nav-item">
+                  <a class="nav-link href="index.html"">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link">About us</a>
+              </li>
+                <li class="nav-item dropdown btn-group">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                    <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item">Cakes & pastries</a>
+                        <a class="dropdown-item">Fruits & vegetables</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Contact us</a>
+                </li>
+
+                <li id="search_cake_on_pdt_page">
+                  <form class="form-inline waves-effect waves-light">
+                      <input id="search_pdt" class="form-control" type="text" placeholder="search cakes & pastries">
+                      <i id="search_btn" class="fa fa-1x fa-search" aria-hidden="true"></i>
+                  </form>
+                </li>-->
+                <li class="nav-item">
+                  <p class="navbar_lines"><i class="fa fa-check" aria-hidden="true"></i> 100% Genuine & fresh Products</p>
+                </li>
+                <li class="nav-item">
+                  <p class="navbar_lines"><i class="fa fa-shield" aria-hidden="true"></i> Secure Payments</p>
+                </li>
+                <li class="nav-item">
+                  <p class="navbar_lines"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Free delivery</p>
+                </li>
+              </ul>
+            </div>
+      <a href="shopping_cart.html" id="shop_cart_home" class="pull-right"><i class="fa fa-shopping-cart fa-2x hidden-sm-down" aria-hidden="true" id="shop_cart_home_icon"></i></a>
+      <a class="btn btn-danger pull-right btn-sm hidden-sm-up" href="shopping_cart.html" id="cart_navbar"  data-toggle="" data-target="">
+    	Shopping cart</a>
+      <a class="btn btn-sm pull-right" href="#" id="signIn_navbar">Signup/Login</a>
+</nav>
+
+
+    <!--=======navbar for the product page end=========-->
+    <!--=========shop from local shops/oheo's virtual bakery starts==========-->
+    <!--just type the city and implement the autocompletion-->
+    <!--as city is chosen...we can show the shops we have on our platform-->
+    <!--=========shop from local shops/oheo's virtual bakery ends==========-->
+  <!--===============offer carousal starts================-->
+<div class="container">
+  <div id="offer_carousal" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#offer_carousal" data-slide-to="0" class="active"></li>
+					<li data-target="#offer_carousal" data-slide-to="1"></li>
+					<li data-target="#offer_carousal" data-slide-to="2"></li>
+					<li data-target="#offer_carousal" data-slide-to="3"></li>
+					<li data-target="#offer_carousal" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<img class="d-block img-fluid" src="img/offer6.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="img/offer5.jpg" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="img/offer3.jpg" alt="Third slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="img/offer4.jpg" alt="Fourth slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block img-fluid" src="img/offer13.jpg" alt="Fifth slide">
+					</div>
+				</div>
+   </div>
+</div>
+
+<!--===============offer carousal ends================-->
+<!--===================searching city and place starts========================-->
+  <!--<div class="container" id="search_city_n_shop">
+    <div class="row">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-3 col-xs-4">
+            <label>City</label>
+            <select class="my_select" id="my_select_city">
+                <option value="" disabled selected>Choose city</option>
+                <option value="1">Nashik</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Pune</option>
+                <option value="4">Banglore</option>
+                <option value="5">Delhi</option>
+            </select>
+
+        </div>
+        <div class="col-md-6 col-xs-4">
+              <label>Cake shop or cafe</label>
+              <select class="my_select" id="my_select_shop">
+                <option value="" disabled selected>Choose cake shop or cafe...</option>
+                <option value="1">Oheo's virtual bakery</option>
+                <option value="2">Monginis cake shop</option>
+                <option value="3">Toccata</option>
+                <option value="3">Puffs n rolls</option>
+                <option value="3">The bake studio</option>
+                <option value="3">Jahangirdar bakers</option>
+                <option value="3">Baker's bounty</option>
+              </select>
+        </div>
+        <div class="col-md-3 col-xs-4">
+          <button type="button" name="button" class="btn btn-danger btn-md" style="font-weight:bold; font-size:12px;">search</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2"></div>
+    </div>
+  </div>-->
+
+  <hr>
+<!--===================searching city and place ends===========================-->
+
+<!--=============sidebar and cake boxes styling starts============-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+       <div class="list-group" id="sidebar_cake_cat">
+        <a href="" class="list-group-item disabled" id="sidebar_header"> Cake categories:</a>
+        <a href="?" class="list-group-item list-group-item-action sidebar_cake_cat_items">All</a>
+        <a href="?category=black_forest" class="list-group-item list-group-item-action sidebar_cake_cat_items">Black forest cakes</a>
+        <a href="" class="list-group-item list-group-item-action sidebar_cake_cat_items">Butterscotch cakes</a>
+        <a href="" class="list-group-item list-group-item-action sidebar_cake_cat_items">Chocolates cakes</a>
+        <a href="" class="list-group-item list-group-item-action sidebar_cake_cat_items">Cheesecakes</a>
+        <a href="" class="list-group-item list-group-item-action sidebar_cake_cat_items">Cupcakes</a>
+        <a href="" class="list-group-item list-group-item-action sidebar_cake_cat_items">Fruit cakes</a>
+        <a href="" class="list-group-item list-group-item-action sidebar_cake_cat_items">Pineapple cakes</a>
+        <a href="" class="list-group-item list-group-item-action sidebar_cake_cat_items">Red velvet cakes</a>
+        <a href="" class="list-group-item list-group-item-action sidebar_cake_cat_items">Strawberry cakes</a>
+
+      </div>
+      <hr>
+      <!--========Filters starts==================-->
+      <div class="list-group">
+        <form action="/products" method="get">
+          <a class="list-group-item disabled" style="font-weight:bold; background-color:#e5e5e5;">Filters:</a>
+          <!--========================================================-->
+          <a href="#weight_of_cake" class="list-group-item list-group-item-action" data-toggle="collapse" aria-expanded="false" aria-controls="weight_of_cake"
+          ><h5 class="mb-0 filter_items">Weights: <i class="fa fa-angle-down rotate-icon"></i></h5>
+          </a>
+
+          <div class="collapse" id="weight_of_cake">
+            <a class="list-group-item " javascript:void(0)><span><input id="0.5_kg"type="checkbox" name="weights[]" value="0.5"></span><label for="0.5_kg">&nbsp;&nbsp;&nbsp;0.5 kg</label></a>
+            <a class="list-group-item " javascript:void(0)><span><input id="1_kg"type="checkbox" name="weights[]" value="1"></span><label for="1_kg">&nbsp;&nbsp;&nbsp;1.0 kg</label></a>
+            <a class="list-group-item " javascript:void(0)><span><input id="2_kg"type="checkbox" name="weights[]" value="2"></span><label for="2_kg">&nbsp;&nbsp;&nbsp;2.0 kg</label></a>
+            <a class="list-group-item " javascript:void(0)><span><input id="4_kg"type="checkbox" name="weights[]" value="4"></span><label for="4_kg">&nbsp;&nbsp;&nbsp;4.0 kg</label></a>
+            <a class="list-group-item " javascript:void(0)><span><input id="5_kg"type="checkbox" name="weights[]" value="5"></span><label for="5_kg">&nbsp;&nbsp;&nbsp;5.0 kg</label></a>
+          </div>
+          <!--========================================================-->
+          <a href="#prices_of_cake" class="list-group-item list-group-item-action" data-toggle="collapse" aria-expanded="false" aria-controls="prices_of_cake"
+          ><h5 class="mb-0 filter_items">Price range: <i class="fa fa-angle-down rotate-icon"></i></h5>
+          </a>
+
+          <div class="collapse" id="prices_of_cake">
+            <a class="list-group-item" javascript:void(0)><span><input id="400_600"type="checkbox" name="price_ranges=[]" value="400-600"></span><label for="#400_600"></label>&nbsp;&nbsp;&nbsp;Rs.400-600/-</a>
+            <a class="list-group-item" javascript:void(0)><span><input id="600_800"type="checkbox" name="price_ranges=[]" value="600-800"></span><label for="#600_800"></label>&nbsp;&nbsp;&nbsp;Rs.600-800/-</a>
+            <a class="list-group-item" javascript:void(0)><span><input id="800_1000"type="checkbox" name="price_ranges=[]" value="800-1000"></span><label for="#800_1000"></label>&nbsp;&nbsp;&nbsp;Rs.800-1000/-</a>
+            <a class="list-group-item" javascript:void(0)><span><input id="1000_1200"type="checkbox" name="price_ranges=[]" value="1000-1200"></span><label for="#1000_1200"></label>&nbsp;&nbsp;&nbsp;Rs.1000-1200/-</a>
+            <a class="list-group-item" javascript:void(0)><span><input id="1200_1500"type="checkbox" name="price_ranges=[]" value="1200-1500"></span><label for="#1200_1500"></label>&nbsp;&nbsp;&nbsp;Rs.1200-1500/-</a>
+          </div>
+          <!--========================================================-->
+          <a href="#egg_eggless" class="list-group-item list-group-item-action" data-toggle="collapse" aria-expanded="false" aria-controls="egg_eggless"
+          ><h5 class="mb-0 filter_items">Egg / Eggless: <i class="fa fa-angle-down rotate-icon"></i></h5>
+          </a>
+
+          <div class="collapse" id="egg_eggless">
+            <a class="list-group-item " javascript:void(0)><span><input id="egg_cake" type="radio" name="eggless" value="false"></span><label for="#egg_cake">&nbsp;&nbsp;&nbsp;</label>Egg</a>
+            <a class="list-group-item " javascript:void(0)><span><input id="eggless_cake" type="radio" name="eggless" value="true"></span><label for="#eggless_cake">&nbsp;&nbsp;&nbsp;</label>Eggless</a>
+          </div>
+
+          <button type="submit" id= "applyFiltersBtn" class="btn btn-outline-danger" name="button" value="submit"><i class="fa fa-sliders"></i>&nbsp;&nbsp;Apply filters</button>
+        </form>
+        <!--========================================================-->
+
+      </div>
+      <!--========Filters ends==================-->
+
+    </div>
+<!--====================cake category sidebar ends==================-->
+<!--====================cake boxes start==================-->
+  <div class="col-sm-9">
+      <div class="container">
+    <div class="row" style="margin: 10px 0px 10px 0px;">
+        <div class="col-md-4">
+
+            <div class="card collection-card shadow">
+                <div class="view hm-zoom cake_images">
+                    <img src="img/cake17.jpg" class="img-fluid" alt="">
+                    <a>
+                        <div class="mask  waves-light"></div>
+                    </a>
+                </div>
+
+                <div class="card-block text-center">
+                    <div class="row">
+                    <div class="col-lg-6">
+                      <p class="cake_name">Category</p>
+                    </div>
+                    <div class="col-lg-6">
+                      <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                      <p class="cake_price">Price: Rs.880/-</p>
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="cake_weight">Weight: 1Kg</p>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="row qty-controls">
+                          <div class="col-lg-4">
+                            <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                          </div>
+                          <div class="col-lg-4">
+                            <input class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='1' />
+                          </div>
+                          <div class="col-lg-4">
+                            <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <a href="/add_to_cart?product_id=1" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</a>
+                      </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <small>Earliest delivery: Today</small>
+                    </div>
+
+                </div>
+            </div>
+
+      </div>
+      <div class="col-md-4">
+          <div class="card collection-card shadow">
+                <div class="view hm-zoom cake_images">
+                    <img src="img/cake8.jpg" class="img-fluid" alt="">
+                    <a>
+                        <div class="mask waves-light"></div>
+                    </a>
+                </div>
+
+
+
+                <div class="card-block text-center">
+                  <div class="row">
+                  <div class="col-lg-6">
+                    <p class="cake_name">Category</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+                  </div>
+                  </div>
+                    <div class="row">
+                    <div class="col-sm-6">
+                      <p class="cake_price">Price: Rs.880/-</p>
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="cake_weight">Weight: 1Kg</p>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                          </div>
+                          <div class="col-lg-4">
+                            <button class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='0' />2</button>
+                          </div>
+                          <div class="col-lg-4">
+                            <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <button type="button" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</button>
+                      </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <small>Earliest delivery: Today</small>
+                    </div>
+
+                </div>
+          </div>
+
+    </div>
+    <div class="col-md-4">
+
+        <div class="card collection-card shadow">
+            <div class="view hm-zoom cake_images">
+                <img src="img/cake6.jpg" class="img-fluid" alt="">
+                <a>
+                    <div class="mask  waves-light"></div>
+                </a>
+            </div>
+
+            <div class="card-block text-center">
+                <div class="row">
+                <div class="col-lg-6">
+                  <p class="cake_name">Category</p>
+                </div>
+                <div class="col-lg-6">
+                  <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6">
+                  <p class="cake_price">Price: Rs.880/-</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="cake_weight">Weight: 1Kg</p>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='0' />2</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <button type="button" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</button>
+                  </div>
+
+                </div>
+                <div class="card-footer">
+                    <small>Earliest delivery: Today</small>
+                </div>
+
+            </div>
+        </div>
+
+  </div>
+</div>
+<br>
+<div class="row" style="margin: 10px 0px 10px 0px;">
+    <div class="col-md-4">
+
+        <div class="card collection-card shadow">
+            <div class="view hm-zoom cake_images">
+                <img src="img/cake8.jpg" class="img-fluid" alt="">
+                <a>
+                    <div class="mask  waves-light"></div>
+                </a>
+            </div>
+
+            <div class="card-block text-center">
+
+              <div class="row">
+              <div class="col-lg-6">
+                <p class="cake_name">Category</p>
+              </div>
+              <div class="col-lg-6">
+                <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+              </div>
+              </div>
+                <div class="row">
+                <div class="col-sm-6">
+                  <p class="cake_price">Price: Rs.880/-</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="cake_weight">Weight: 1Kg</p>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='0' />2</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <button type="button" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</button>
+                  </div>
+
+                </div>
+                <div class="card-footer">
+                    <small>Earliest delivery: Today</small>
+                </div>
+
+            </div>
+        </div>
+
+  </div>
+  <div class="col-md-4">
+      <div class="card collection-card shadow">
+            <div class="view hm-zoom cake_images">
+                <img src="img/cake10.jpg" class="img-fluid" alt="">
+                <a>
+                    <div class="mask  waves-light"></div>
+                </a>
+            </div>
+
+
+
+            <div class="card-block text-center">
+              <div class="row">
+              <div class="col-lg-6">
+                <p class="cake_name">Category</p>
+              </div>
+              <div class="col-lg-6">
+                <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+              </div>
+              </div>
+                <div class="row">
+                <div class="col-sm-6">
+                  <p class="cake_price">Price: Rs.880/-</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="cake_weight">Weight: 1Kg</p>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='0' />2</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <button type="button" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</button>
+                  </div>
+
+                </div>
+                <div class="card-footer">
+                    <small>Earliest delivery: Today</small>
+                </div>
+
+            </div>
+      </div>
+
+</div>
+<div class="col-md-4">
+
+    <div class="card collection-card shadow">
+        <div class="view hm-zoom cake_images">
+            <img src="img/cake6.jpg" class="img-fluid" alt="">
+            <a>
+                <div class="mask  waves-light"></div>
+            </a>
+        </div>
+
+        <div class="card-block text-center">
+            <div class="row">
+            <div class="col-lg-6">
+              <p class="cake_name">Category</p>
+            </div>
+            <div class="col-lg-6">
+              <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6">
+              <p class="cake_price">Price: Rs.880/-</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="cake_weight">Weight: 1Kg</p>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                  </div>
+                  <div class="col-lg-4">
+                    <button class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='0' />2</button>
+                  </div>
+                  <div class="col-lg-4">
+                    <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <button type="button" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</button>
+              </div>
+
+            </div>
+            <div class="card-footer">
+                <small>Earliest delivery: Today</small>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+<br>
+<div class="row" style="margin: 10px 0px 10px 0px;">
+    <div class="col-md-4">
+
+        <div class="card collection-card shadow">
+            <div class="view hm-zoom cake_images">
+                <img src="img/cake12.jpg" class="img-fluid" alt="">
+                <a>
+                    <div class="mask  waves-light"></div>
+                </a>
+            </div>
+
+            <div class="card-block text-center">
+
+              <div class="row">
+              <div class="col-lg-6">
+                <p class="cake_name">Category</p>
+              </div>
+              <div class="col-lg-6">
+                <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+              </div>
+              </div>
+                <div class="row">
+                <div class="col-sm-6">
+                  <p class="cake_price">Price: Rs.880/-</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="cake_weight">Weight: 1Kg</p>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='0' />2</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <button type="button" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</button>
+                  </div>
+                </div>
+                <div class="card-footer">
+                    <small>Earliest delivery: Today</small>
+                </div>
+
+            </div>
+        </div>
+
+  </div>
+  <div class="col-md-4">
+      <div class="card collection-card shadow">
+            <div class="view hm-zoom cake_images">
+                <img src="img/cake13.jpg" class="img-fluid" alt="">
+                <a>
+                    <div class="mask  waves-light"></div>
+                </a>
+            </div>
+
+
+
+            <div class="card-block text-center">
+              <div class="row">
+              <div class="col-lg-6">
+                <p class="cake_name">Category</p>
+              </div>
+              <div class="col-lg-6">
+                <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+              </div>
+              </div>
+                <div class="row">
+                <div class="col-sm-6">
+                  <p class="cake_price">Price: Rs.880/-</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="cake_weight">Weight: 1Kg</p>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='0' />2</button>
+                      </div>
+                      <div class="col-lg-4">
+                        <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <button type="button" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</button>
+                  </div>
+
+                </div>
+                <div class="card-footer">
+                    <small>Earliest delivery: Today</small>
+                </div>
+
+            </div>
+      </div>
+
+</div>
+<div class="col-md-4">
+
+    <div class="card collection-card shadow">
+        <div class="view hm-zoom cake_images">
+            <img src="img/cake22.jpg" class="img-fluid" alt="">
+            <a>
+                <div class="mask  waves-light"></div>
+            </a>
+        </div>
+
+        <div class="card-block text-center">
+            <div class="row">
+            <div class="col-lg-6">
+              <p class="cake_name">Category</p>
+            </div>
+            <div class="col-lg-6">
+              <i class="fa fa-heart" aria-hidden="true" style="color:hotpink">&nbsp;50</i>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6">
+              <p class="cake_price">Price: Rs.880/-</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="cake_weight">Weight: 1Kg</p>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyminus" field="quantity">-</button>
+                  </div>
+                  <div class="col-lg-4">
+                    <button class="btn btn-sm add-to-cart-qty qty" type="button" type='text' name='quantity' value='0' />2</button>
+                  </div>
+                  <div class="col-lg-4">
+                    <button type="button" name="button" class="btn inc_dec_btn btn-sm qtyplus" field="quantity">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <button type="button" class="btn btn-danger btn-sm addToCart_btn ">Add&nbsp;to&nbsp;cart</button>
+              </div>
+
+            </div>
+            <div class="card-footer">
+                <small>Earliest delivery: Today</small>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+   </div>
+   <br>
+ </div>
+</div>
+
+  <!--====================cake boxes ends==================-->
+  </div>
+</div>
+<!--===========sidebar and cake boxes styling ends==============-->
+<!--===================Footer start============================-->
+  <footer class="container-fluid">
+    <div class="container-fluid" id="footer_container">
+
+    <div class="row">
+      <div class="col-sm-3">
+        <h1 class="display-4" id="footer_oheo">Redgini</h1>
+        <p id="footer_lines">The great cakes and pastries are about making your taste buds do that happy dance. A spin, a twirl and a pirouette. At Redgini, we believe a great taste and quality is one that's been made with oodles of love by our products. It's all about recreating flavours and creating recipes that are drool-worthy and memorable</p>
+      </div>
+
+      <div class="col-sm-5">
+        <div class="row">
+        <div class="col-sm-6">
+        <h6 id="footer_cat_head">Categories</h6>
+        <hr style="background-color:white">
+        <ul  class="list-unstyled" id="categories_footer">
+          <li><a href="#">Chocolate</a></li>
+          <li><a href="#">Vanilla</a></li>
+          <li><a href="#">Pineapple</a></li>
+          <li><a href="#">Strawberry</a></li>
+          <li><a href="#">Mixed fruit</a></li>
+          <li><a href="#">New releases</a></li>
+        </ul>
+        </div>
+        <div class="col-sm-6">
+        <h6 id="footer_links_head">Useful links</h6>
+        <hr style="background-color:white">
+        <ul class="list-unstyled" class="unstyled" id="links_footer">
+          <li><a href="#aboutus">About us</a></li>
+          <li><a href="#contactus">Contact us</a></li>
+          <li><a href="policies.html">Privacy policies</a></li>
+          <li><a href="policies.html">Disclaimer</a></li>
+          <li><a href="policies.html">Terms & conditions</a></li>
+          <li><a href="policies.html">Privacy policies</a></li>
+        </ul>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+      <h6 id="footer_mail_head">Support & Enquiry</h6>
+      <hr style="background-color:white">
+      <i class="fa fa-1x fa-envelope" aria-hidden="true" style="color:white"></i>
+      <a id="footer_mail_link" href="">support@oheo.in</a>
+      <br><br>
+      <i class="fa fa-1x fa-phone" aria-hidden="true"  style="color:white"></i>
+      <a id="footer_phone_link" href="">+91 9730807012</a>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 social_network_btns">
+
+        <ul class="social-network social-circle">
+            <li><a type="button" class="icoFacebook"><i class="fa fa-facebook"> </i></a></li>
+            <li><a type="button" class="icoGoogle"><i class="fa fa-google-plus"> </i></a></li>
+            <li><a type="button" class="icoTwitter"><i class="fa fa-twitter"> </i></a></li>
+            <li><a type="button" class="icoPinterest"><i class="fa fa-pinterest"> </i></a></li>
+            <li><a type="button" class="icoInstagram"><i class="fa fa-instagram"> </i></a></li>
+            <li><a type="button" class="icoYoutube"><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+    </div>
+    <div class="col-md-4"></div>
+  <!--Copyright-->
+  <div id="footer_oheoLink">
+         <h6>© 2017 Copyright:<a href="https://www.oheo.in"> www.oheo.in</a></h6>
+   </div>
+   <!--/.Copyright-->
+    </div>
+</footer>
+
+<!--===================Footer end============================-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+       <script src="js/jquery.min.js"></script>
+       <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+       <script src="js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="js/main-pdt-page.js"></script>
+   		 <script type="text/javascript" src="js/angular.min.js"></script>
+  </body>
+</html>

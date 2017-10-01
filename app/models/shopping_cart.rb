@@ -33,6 +33,9 @@ class ShoppingCart < ActiveRecord::Base
        self.line_items.destroy_all 
     end
     
+    def empty?
+        self.line_items.empty? 
+    end
     private
     
         def update_total

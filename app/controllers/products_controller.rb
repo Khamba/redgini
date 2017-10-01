@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  
+  layout false, only: :index
 
   def index
     @categories = Category.all
@@ -38,7 +40,7 @@ class ProductsController < ApplicationController
   
   private
   
-    def parse_filters
+    def parse_filters(filters)
       # TODO
     end
     

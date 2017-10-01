@@ -1,22 +1,24 @@
 class SessionsController < ApplicationController
   
+  layout false, except: :create
+  
   def new
   end
 
   def create
-    begin
+    # begin
       @user = User.from_omniauth(request.env['omniauth.auth'])
       session[:user_id] = @user.id
-    rescue
-    end
-    redirect_to :back or root_url
+    # rescue
+    # end
+    redirect_to root_url
   end
 
   def destroy
     if current_user
       session.delete(:user_id)
     end
-    redirect_to :back or root_url
+    redirect_to root_url
   end
 
 end

@@ -1,9 +1,15 @@
 class OrdersController < ApplicationController
+    
+    layout false
+    
     def new
-        if current_user
+        @shopping_cart = get_or_create_shopping_cart
+        if @shopping_cart.empty?
+            redirect_to products_url
+        elsif current_user
             @order = Order.new(user: current_user)
         else
-            redirect_to login_path
+            redirect_to login_url
         end
     end
     

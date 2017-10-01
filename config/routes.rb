@@ -33,11 +33,11 @@ Rails.application.routes.draw do
 
   get 'cart', to: 'cart#show'
   post :add_to_cart, to: 'cart#add'
-  delete :remove_from_cart, to: 'cart#remove'
+  get :remove_from_cart, to: 'cart#remove'
 
   get 'login', to: 'sessions#new'
   get 'auth/:provider/callback', to: 'sessions#create'
-  delete 'logout', to: 'sessions#destroy'
+  get 'logout', to: 'sessions#destroy'
   
   get 'checkout', to: 'orders#new'
   get 'thank_you', to: 'orders#show'
