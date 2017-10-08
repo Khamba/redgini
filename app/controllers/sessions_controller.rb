@@ -11,10 +11,11 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
     # rescue
     # end
-    if @user.mobile_number.blank?
-      redirect_to mobile_number_url
+
+    if @user.otp_verified?
+      redirect_to products_url  
     else
-      redirect_to products_url
+      redirect_to mobile_number_url
     end
   end
 

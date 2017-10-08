@@ -14,14 +14,17 @@
 #  image_file_size    :integer
 #  image_updated_at   :datetime
 #  category_id        :integer
+#  product_number     :string
 #
 
 class Product < ActiveRecord::Base
 
   validates :name, presence: true
   validates :price, presence: true
-  validates :weight, presence: true
+  validates :weight, presence: true, numericality: { greater_than: 0 }
   validates :earliest_delivery, presence: true
+  validates :category, presence: true
+  validates :product_number, presence: true
 
   has_attached_file :image
   validates_attachment_presence :image

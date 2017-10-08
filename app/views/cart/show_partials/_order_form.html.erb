@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card shadow_depth_1" id="checkout_details">
+        <%= form_tag(place_order_path, method: :post, id: "checkout_form") do %>
+          <div class="col-md-12" id="">
+            <h6><i class="fa fa-check-circle" aria-hidden="true"></i> Delivery Address</h6>
+            <p>Enter your address details so that we can deliver your product to you as soon as possible !</p>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control form-control-sm" id="name" value="<%= @address.name %>" placeholder="" name="address[name]">
+            </div>
+
+            <div class="form-group">
+              <label for="form_flat">Flat / House / Office No.</label>
+              <input type="text" class="form-control form-control-sm" id="form_flat" value="<%= @address.line_1 %>" placeholder="" name="address[line_1]">
+            </div>
+
+            <div class="form-group">
+              <label for="form_street">Street / Society / Office Name</label>
+              <input type="text" class="form-control form-control-sm" id="form_street" value="<%= @address.line_2 %>" placeholder="" name="address[line_2]">
+            </div>
+
+            <div class="form-group">
+              <label for="form_area">Area</label>
+              <select class="form-control form-control-sm" id="form_area" name="address[area]">
+                  <option value="Gangapur Road" <%= @address.area == "Gangapur Road" ? "selected" : "" %>>Gangapur road</option>
+                  <option value="College road" <%= @address.area == "College road" ? "selected" : "" %>>College road</option>
+                  <option value="Indira nagar" <%= @address.area == "Indira nagar" ? "selected" : "" %>>Indira nagar</option>
+                  <option value="Satpur" <%= @address.area == "Satpur" ? "selected" : "" %>>Satpur</option>
+                  <option value="Cidco" <%= @address.area == "Cidco" ? "selected" : "" %>>Cidco</option>
+                  <option value="Nashik-road / Jail-road" <%= @address.area == "Nashik-road / Jail-road" ? "selected" : "" %>>Nashik-road / Jail-road</option>
+                  <option value="Gangapur gaon, Aanandwali, etc." <%= @address.area == "Gangapur gaon, Aanandwali, etc." ? "selected" : "" %>>Gangapur gaon, Aanandwali, etc.</option>
+                  <option value="Govind nagar" <%= @address.area == "Govind nagar" ? "selected" : "" %>>Govind nagar</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form_city">City</label>
+              <input type="text" class="form-control form-control-sm" id="form_state" placeholder="Nashik" value="Nashik" name="address[city]" readonly>
+            </div>
+            <div class="form-group">
+              <label for="form_state">State</label>
+              <input type="text" class="form-control form-control-sm" id="form_state" placeholder="Maharashtra" value="Maharashtra" name="address[state]" readonly>
+            </div>
+        </div>
+        <hr>
+
+        <div class="col-md-12">
+          <h6><i class="fa fa-check-circle" aria-hidden="true"></i> Delivery date & time</h6>
+          <p>Choose the time which is convenient to you...please checkout our delivery policies carefully !</p>
+          <p>Choose delivery date</p>
+          <p><input type="text" id="datepicker" class="form-control form-control-sm" name="order[delivery_date]"></p>
+          <p>Choose delivery time</p>
+          <ul id="std_del_list">
+            <p class="timeSlotHeader">Standard delivery</p>
+            <li><input type="radio" name="order[delivery_time]" value="04:00PM - 06:00PM" id="delTime1" checked><label for="delTime1">&nbsp;04:00PM - 06:00PM</label></li>
+            <li><input type="radio" name="order[delivery_time]" value="06:00PM - 08:00PM" id="delTime2"><label for="delTime2">&nbsp;06:00PM - 08:00PM</label></li>
+            <li><input type="radio" name="order[delivery_time]" value="08:00PM - 11:00PM" id="delTime3"><label for="delTime3">&nbsp;08:00PM - 11:00PM</label></li>
+            <p class="timeSlotHeader">Mid night delivery</p>
+            <li><input type="radio" name="order[delivery_time]" value="11:00PM - 11:30PM" id="delTime4"><label for="delTime4">&nbsp;11:00PM - 11:30PM</label></li>
+            <li><input type="radio" name="order[delivery_time]" value="11:30PM - 11:59PM" id="delTime5"><label for="delTime5">&nbsp;11:30PM - 11:59PM</label></li>
+            <p class="timeSlotHeader">Morning delivery</p>
+            <li><input type="radio" name="order[delivery_time]" value="09:00AM - 11:00AM" id="delTime6"><label for="delTime6">&nbsp;09:00AM - 11:00AM</label></li>
+            <li><input type="radio" name="order[delivery_time]" value="11:00AM - 01:00PM" id="delTime7"><label for="delTime7">&nbsp;11:00AM - 01:00PM</label></li>
+            <li><input type="radio" name="order[delivery_time]" value="01:00PM - 04:00PM" id="delTime8"><label for="delTime8">&nbsp;01:00PM - 04:00PM</label></li>
+            <!-- <li><input type="radio" name="order[delivery_time]" value="9" id="delTime9"><label
+                for="delTime9">&nbsp;Fixed time delivery</label></li>
+            <input id="fixDelTime" type="time" class="form-control form-control-sm" placeholder="click here"> -->
+          </ul>
+        </div>
+        <hr>
+
+        <div class="col-md-12">
+          <p><button class="btn myBtn" id="pay_btn" type="submit">Proceed to pay</button></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+  <!--=================left block starts========================-->
+  <div class="col-md-4">
+    <div class="card shadow_depth_1" id="order_details">
+
+    </div>
+  </div>
+  <!--=================left block ends========================-->
+  </div>

@@ -27,6 +27,7 @@
 # mobile_number_verify_otp POST   /mobile_number/verify_otp(.:format)     mobile_number#verify_otp
 #                 checkout GET    /checkout(.:format)                     orders#new
 #                thank_you GET    /thank_you(.:format)                    orders#show
+#              place_order POST   /place_order(.:format)                  orders#create
 # 
 
 Rails.application.routes.draw do
@@ -47,4 +48,5 @@ Rails.application.routes.draw do
 
   get 'checkout', to: 'orders#new'
   get 'thank_you', to: 'orders#show'
+  post 'place_order', to: 'orders#create'
 end

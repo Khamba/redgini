@@ -36,9 +36,6 @@
     <% if !logged_in? %>
   	 <a class="btn btn-danger pull-right btn-sm" href=<%= login_path %> id="signIn_navbar"  data-toggle="" data-target="">
   	Signup/Login</a>
-    <% else %>
-    <a class="btn btn-danger pull-right btn-sm" href=<%= logout_path %> id="signIn_navbar"  data-toggle="" data-target="">
-  Logout</a>
     <% end %>
   <% end %>
 </nav>

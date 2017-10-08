@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :restrict_access_to_admin
 
   def new
     @category = Category.new

@@ -266,6 +266,8 @@ body#cake_product_page .add-to-cart-qty{
 	color: black;
 	font-size: 15px;
 	background-color: white;
+	width: 35px;
+	text-align: left;
 }
 body#cake_product_page input.qtyplus {
 	  width:20px;

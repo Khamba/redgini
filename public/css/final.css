@@ -54,7 +54,7 @@ body#final #delAddress{
     margin: 0px 0px 10px 10px;
     font-size: 25px;
 }
-body#final #address{
+body#final .address{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     margin: 5px 10px 50px 40px;

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <%= render 'layouts/partials/head', specific_css_file_link: capture { %>
+    <link rel="stylesheet" type="text/css" href="css/final.css">
+    <link rel="stylesheet" href="css/pikaday.css">
+  <% } %>
+  <% # do end syntax doesn't work in the above %>
+
+  <body id="final">
+    <%= render 'cart/show_partials/navbar' %>
+
+    <div class="container">
+      <div class="row">
+      <div class="col-md-8">
+         <div class="card shadow_depth_1" id="frame">
+            <h1 id="thankYou">THANK YOU...</h1>
+            <p id="msg">We received your order and it has been confirmed. We will give you confirmation call as soon as possible. You will receive an email confirmation shortly regarding the order. </p>
+             <p id="delTime"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Delivery time and date:&nbsp;&nbsp;&nbsp;&nbsp;<label id="time"><%= @order.delivery_time %></label>&nbsp;&nbsp;&nbsp;<label id="date"><%= @order.delivery_date.strftime("%e %b, %Y") %></label>&nbsp;</p>
+             <p id="delAddress"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Delivery address:</p>
+             <p class="address"><%= @address.line_1 %>, <%= @address.line_2 %>, <%= @address.area %>, <%= @address.city %>, <%= @address.state %></p>
+             <div class="row">
+                 <div class="col-md-4"><a href=<%= products_path %>><button id="shopBtn" class="btn">Back to shopping</button></a></div>
+                 <div class="col-md-4"></div>
+                 <div class="col-md-4"></div>
+             </div>
+         </div>
+      </div>
+
+      <div class="col-md-4">
+         <div class="card shadow_depth_1" id="frame">
+         <h3 id="orderHeading">My order summary</h3>
+            <ul id="summaryOfItems">
+                <li id="listHeader">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">Product</div>
+                        <div class="col-md-2 col-sm-2">Qty</div>
+                        <div class="col-md-4 col-sm-4">Net Cost</div>
+                    </div>
+                </li>
+                <hr style="background-color:black">
+                <% @cart.line_items.each do |line_item| %>
+                  <li class="listItems">
+                      <div class="row">
+                          <div class="col-md-6 col-sm-6"><%= line_item.product.name %></div>
+                          <div class="col-md-2 col-sm-2"><%= line_item.quantity %></div>
+                          <div class="col-md-4 col-sm-4">Rs. <%= line_item.total %></div>
+                      </div>
+                  </li>
+                <% end %>
+                <hr style="background-color:black">
+                <li class="totalItems">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">Total</div>
+                        <div class="col-md-2 col-sm-2"></div>
+                        <div class="col-md-4 col-sm-4">Rs. <%= @cart.total %></div>
+                    </div>
+                </li>
+            </ul>
+
+         </div>
+      </div>
+     </div>
+   </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -11,6 +11,8 @@
 #  updated_at    :datetime         not null
 #  uid           :string
 #  otp           :string
+#  otp_verified  :boolean          default(TRUE)
+#  role          :string           default("customer")
 #
 
 class User < ActiveRecord::Base

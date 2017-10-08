@@ -13,13 +13,18 @@
 #
 
 class LineItem < ActiveRecord::Base
+
+  validates :product, presence: true
+  validates :unit_price, numericality: { greater_than: 0 }
+  validates :quantity, numericality: { greater_than: 0 }
+
   belongs_to :product
   belongs_to :shopping_cart
-  
+
   before_save :set_total
-  
+
   def set_total
     self.total = unit_price * quantity
   end
-  
+
 end

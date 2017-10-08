@@ -15,5 +15,9 @@
 #
 
 class Address < ActiveRecord::Base
-    belongs_to :user
+  validates :name, presence: true
+  validates :line_1, presence: true
+  validates :line_2, presence: true
+  validates :area, presence: true
+  belongs_to :user
 end

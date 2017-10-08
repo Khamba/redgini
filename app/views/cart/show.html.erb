@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<%= render 'layouts/partials/head', specific_css_file_link: capture { %>
+  <link rel="stylesheet" type="text/css" href="css/shopping_cart.css">
+<% } %>
+  <body id="cartpage">
+    <%= render 'cart/show_partials/navbar', right_side_menu: false %>
+    <div class="container-fluid" style="background-color:#f3f2f2">
+      <div class="container">
+      <h2 id="table_header">My Shopping cart</h2>
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Price/cake</th>
+            <th>Quantity</th>
+            <th>Weight</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @cart.line_items.each_with_index do |line_item, idx| %>
+            <tr>
+              <th class="sr_no" scope="row"><%= 1+idx %></th>
+              <td class="cart_img"><img src="<%= line_item.product.image.url %>" alt="" class="img-rounded cart_cake_img">Mark</td>
+
+              <td class="cart_unitprice">Rs. <%= line_item.unit_price %></td>
+              <td class="cake_qty"><%= line_item.quantity %></td>
+              <td class="cart_qty_col"><%= line_item.product.weight %> Kg
+              </td>
+              <td class="cart_total">Rs. <%= line_item.total %></td>
+              <td class="cart_remove_btn"><a class="btn btn-danger" href="<%= remove_from_cart_path(line_item_id: line_item.id) %>"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+            </tr>
+          <% end %>
+          <tr class="alert alert-info">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>NET TOTAL</td>
+            <td>Rs.<%= @cart.total %>/-</td>
+          </tr>
+        </tbody>
+     </table>
+
+     <div class="row" id="cart_btn">
+       <div class="col-md-4">
+         <a href="<%= products_path %>"><button type="button" name="button" class="btn pull-left" id="cart_back" style="font-size:bold">Back to shopping</button></a>
+       </div>
+       <div class="col-md-4"></div>
+       <div class="col-md-4">
+         <a href="<%= checkout_path %>"><button type="button" name="button" class="btn pull-right" id="cart_checkout">Checkout</button></a>
+       </div>
+     </div>
+     </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap3.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
