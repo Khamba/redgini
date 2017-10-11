@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Redgini</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Redgini</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render partial: "layouts/partials/flash", flash: flash %>
+    <%= yield %>
+  </body>
 </html>

@@ -5,6 +5,7 @@
 <% } %>
   <body id="cartpage">
     <%= render 'cart/show_partials/navbar', right_side_menu: false %>
+    <%= render partial: "layouts/partials/flash", flash: flash %>
     <div class="container-fluid" style="background-color:#f3f2f2">
       <div class="container">
       <h2 id="table_header">My Shopping cart</h2>
@@ -57,7 +58,6 @@
      </div>
      </div>
     </div>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->

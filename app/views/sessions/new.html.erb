@@ -9,7 +9,7 @@
   <body id="login_details">
 
     <%= render 'layouts/partials/navbar', right_side_menu: false %>
-
+    <%= render partial: "layouts/partials/flash", flash: flash %>
     <!--====facebook, gmail and manual login page start=====-->
 
     <div class="container" style="margin-bottom:50px;">
@@ -41,9 +41,8 @@
 
     <!--====facebook, gmail and manual login page end=====-->
 
-
-
     <%= render 'layouts/partials/footer' %>
+
     <%= render 'layouts/partials/javascripts', specific_js_file_link: '' %>
 
   </body>

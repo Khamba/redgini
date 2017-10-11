@@ -8,6 +8,7 @@
 
   <body id="otp_page">
     <%= render 'layouts/partials/navbar', right_side_menu: false %>
+    <%= render partial: "layouts/partials/flash", flash: flash %>
 
   <!--====otp page start=====-->
 
@@ -75,6 +76,7 @@
   <!--====otp page end=====-->
 
   <%= render 'layouts/partials/footer' %>
+
   <%= render 'layouts/partials/javascripts', specific_js_file_link: capture { %>
     <script type="text/javascript" src="js/mobile_number.js"></script>
   <% } %>

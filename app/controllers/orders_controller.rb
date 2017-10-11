@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
     def new
       @shopping_cart = get_or_create_shopping_cart
       if @shopping_cart.empty?
+        flash[:error] = "Add something to your cart first!"
         redirect_to products_url
       elsif current_user
         @address = current_user.address || current_user.build_address

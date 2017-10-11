@@ -8,6 +8,7 @@
   <body id="cake_product_page">
 
     <%= render 'layouts/partials/navbar_without_menu', right_side_menu: true %>
+    <%= render partial: "layouts/partials/flash", flash: flash %>
     <!-- The above is different from the community navbar. -->
     <%= render 'products/index_partials/offers' %>
     <%# render 'products/index_partials/search_city_and_place' %>
