@@ -28,7 +28,7 @@
 #                 checkout GET    /checkout(.:format)                     orders#new
 #                thank_you GET    /thank_you(.:format)                    orders#show
 #              place_order POST   /place_order(.:format)                  orders#create
-# 
+#
 
 Rails.application.routes.draw do
   root 'static_pages#home'
@@ -49,4 +49,6 @@ Rails.application.routes.draw do
   get 'checkout', to: 'orders#new'
   get 'thank_you', to: 'orders#show'
   post 'place_order', to: 'orders#create'
+
+  post 'contact_us', to: 'contact_us#send_message'
 end

@@ -35,3 +35,4 @@ gem "omniauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-facebook"
 gem "awesome_print"
+gem 'aws-ses', '~> 0.4.4', require: 'aws/ses'
