@@ -51,4 +51,6 @@ Rails.application.routes.draw do
   post 'place_order', to: 'orders#create'
 
   post 'contact_us', to: 'contact_us#send_message'
+
+  # get 'menu_card', to: 'static_pages#menu_card'
 end
